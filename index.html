@@ -1,0 +1,59 @@
+<!--
+    Title: Week 4 Lab 4
+    Author: Lovecita Jean-Michel
+    Date: July 30th, 2020
+    Purpose: the purpose of this lab is to allow users to allow users to enter  number of trial(s),
+     range of value(s), and number of dice.Once they submit their prefered values, the app will then diplay
+     the outcomes of the dice.
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dice Roll</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 
+        Dice Roll Simulator (User picks number of dice to roll, range of values on dice, and/or number of trials)
+        Table would include the roll number and result of the row in each row. If more than 1 die is rolled, each
+        die's result should be in its own column.
+     -->
+    <div class="ui-body ui-body-a ui-corner-all">
+
+        <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+            <label for="numberDice" class="ui-input-number">Number of Dice (1-10):</label>
+            <input type="number" name="numberDice" id="numberDice"  
+                class="ui-input-number ui-body-a" min="1" max="10" step="1"  >
+            <span id="errorDice" hidden></span>
+        </div>
+
+        <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+            <label for="numberRange" class="ui-input-number">Range of Values (1-100):</label>
+            <input type="number" name="numberRange" id="numberRange" 
+                class="ui-input-number ui-body-a" min="1" max="100" step="1" >
+            <span id="errorRange" hidden></span>    
+        </div>
+
+        <div data-role="fieldcontain" class="ui-field-contain ui-body ui-br">
+            <label for="numberTrials" class="ui-input-number">Number of trials (1-100):</label>
+            <input type="number" name="numberTrials" id="numberTrials"  
+                class="ui-input-number ui-body-a" min="1" max="100" step="1"  >
+            <span id="errorTrials" hidden></span>    
+        </div>
+
+        <button id="submit" type="submit" data-theme="a" name="submit" value="submit-value"  
+            aria-disabled="false">Submit</button>
+
+        </div>
+
+    <table id="tableData"></table>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

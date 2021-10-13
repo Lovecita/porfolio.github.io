@@ -1,0 +1,102 @@
+/* Lovecita Jean-Michel
+   April 19, 2021
+   Index.css file made to style index.html
+*/
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* style rule for body and images */
+body {
+    background-color: lightblue; /* background color light blue */
+}
+img {
+    max-width: 100%;
+    display: block;
+
+}
+/* style rule for header */
+header {
+    float: left;
+    width: 75%;
+    padding: 10px 16px;
+}
+sticky {
+    position: fixed;
+}
+/* style rule for nav */
+ nav { 
+     float: right;
+     margin: 5em 3em 0 0;
+     width: 70%;
+
+}
+/* style rule for unorder list for nav */
+nav ul{
+    list-style: none;    
+    margin: 0;
+    text-align: right;
+}
+/* style nav list in line on top of page*/
+nav li {
+    display: inline-block;
+    font-size: 1.5em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+}
+/* style rules for main content */
+main {
+    clear: left;
+}
+/* style to align h3 to center so it would fit as intended*/
+h3 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+/* style to align h1 to center so it fit as intended*/
+h1 {
+    text-align: center;
+    margin: 0px auto;
+}
+Education {
+    width: 80%;
+    margin: 0 auto;
+}
+/* style rule for footer paragraph */
+footer p {
+    font-size: 0.75em;
+    text-align: left;
+    color: lightblue;
+    padding: 0 1em;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+.map {
+    border: 8px solid white;
+}
+.begining{
+    text-align: center;
+}
+remlink{
+    text-align: right;
+}

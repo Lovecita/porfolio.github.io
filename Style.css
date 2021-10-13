@@ -1,0 +1,266 @@
+/* Lovecita Jean-Michel
+   April 19, 2021
+   Index.css file made to style index.html
+*/
+/* CSS reset */
+body, header, nav, main, footer, h1, div, img, ul,article,section,figure, figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+section {
+    display: block;
+}
+/* style rule for body and images */
+/* this applies to mobile format */
+body {
+    background-color: lightblue; /* background color light blue */
+}
+img {
+    max-width: 100%;
+    display: block;
+
+}
+/*style rules for moble viewport */
+/* style rule for header */
+header {
+    position:-webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: lightblue;
+    height: 190px;
+    padding: 10px 16px;
+}
+header img{
+    margin: 0 auto;
+}
+sticky {
+    position: fixed;
+}
+ nav { 
+     float: right;
+     margin: 5em 3em 0 0;
+     width: 70%;
+
+}
+nav ul{
+    list-style: none;    
+    text-align: center; /* adjusted from right to center to better fit mobile*/
+}
+/* style nav list in line on top of page*/
+/* this applies to mobile format*/
+nav li {
+    font-size: 1.5em;
+    font-family: 'Bangers', cursive;
+    border-top: 1px solid #fff; /* this creates a navigation list for mobile and seperate tag with white lines (color can change)*/
+}
+/* this removes the line about the first tab on navigation list */
+/*this applies to mobile format*/
+nav li:first-child{
+    border-top: none;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+
+}
+/* show mobile class, hide tablet-desktop class*/
+.mobile{
+    display: block;
+}
+.tablet-desktop {
+    display: none;
+}
+/* style rules for main content the font family was altered to a google font */
+main {
+    clear: left;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+/* css style for links to tel number with white padding */
+/* relevant to mobile*/
+.tel-link {
+    background-color: whitesmoke;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px; /* this give rounded corners */
+}
+/* css style for link to email with white padding with rounded corners*/
+.email-link {
+    background-color: whitesmoke;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+h3 {
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin: 0px auto;
+}
+.Education {
+    width: 80%;
+    margin: 0 auto;
+}
+footer p {
+    font-size: 0.75em;
+    text-align: left;
+    color: lightblue;
+    padding: 0 1em;
+}
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+main img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+/* adjusted css to allow map to fit mobile devices better*/
+.map {
+    border: 2px solid white;
+    width: 95%;
+    height: 50%;
+}
+/*re-align address to center*/
+.addy , .text {
+    text-align: center;
+}
+/* fixed id remlink and turn it into a class. 
+   Now remlink is center and have rounded border padding 
+   add the class project-link to save writing space*/
+.remlink, .project-link {
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2%;
+    margin: 0 auto;
+    border-radius: 5px;
+    width: 60%;
+}
+/* this customized the listed link in the main element*/
+main li{
+    color: black;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+/* media query for tablet viewport*/
+@media screen and (min-width: 630px) {
+
+.tablet-desktop{
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+/*tablet viewport: style for header */
+header {
+    position: static;
+    padding-bottom: 2%;
+}
+/* Tablet viewport: style for nav */
+nav li {
+    border-top: none;
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+nav li:last-child{
+    border-right: none;
+}
+ nav li a{
+     padding: 0.1em 0.75em;
+ }
+ /*Tablet viewport: style rules for main content */
+ main ul {
+     margin: 0 0 4% 10%;
+     text-align: center;
+ }
+ main p {
+     text-align: center;
+ }
+ .tel-num{
+     font-size: 1.25em;
+     text-align: center;
+ }
+ .map{
+     width: 600px;
+     height: 450px;
+ }
+ 
+}
+/* Desktop viewport: style rule fore header 
+devices with the minimum width of 769px*/
+@media  screen and (min-width: 769px) {
+    .desktop{
+        display: block;
+    }
+    .tablet-desktop{
+        display: none;
+    }
+    
+    .mobile {
+        display: none;
+    }
+header{
+    width: 25%;
+    float: left;
+    padding-bottom: 0;
+    text-align: center;
+
+}
+/* desktop viewport: style for nav */
+nav{
+    float: right;
+    width: 70%;
+    margin: 4em 1em 0 0;
+}
+nav ul{
+    text-align: right;
+}
+nav li{
+    border: none;
+}
+nav li a {
+    padding: 0.5em 1em;
+}
+nav li a:hover{
+    color: #000;
+
+}
+/* desktop: style for main*/
+main{
+    clear: left;
+}
+main h1 {
+    font-size: 1.8em;
+}
+.map{
+    border: 8px solid white;
+    width: 95%;
+    height: 50%;
+}
+footer button{
+    position: absolute;
+width: 170px;
+height: 60px;
+left: 947px;
+top: 2900px;
+
+/* 4 */
+background: #F063B8;
+border-radius: 50px;
+}
+}
